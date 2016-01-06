@@ -1,0 +1,98 @@
+body{
+  background-color:white;
+  font-family:'Open Sans';
+  background-image:url("resources/skyblue.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:100% 100%;
+}
+h1{
+  color:#ffffff;
+  margin-top:-15px;
+}
+form a:hover {
+     color:red;
+ }
+form{
+  text-align:center;
+  margin:0 auto;
+}
+#login{
+  text-align:left;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left:-450px;
+  width: 500px;
+  font-family:"Lucida Console", Monaco, monospace;
+  font-size:12px;
+}
+#account{
+  text-align:left;
+  position:absolute;
+  top:200px;
+  left:50%;
+  margin-left:-100px;
+  width:500px;
+  font-family:"Lucida Console", Monaco, monospace;
+  font-size:12px;
+}
+#vr{
+   border-width:thin;
+   color:#999966;
+   position:absolute;
+   top:150px;
+   bottom:250px;
+   left:550px;
+   border-style:groove;
+}
+#header1{
+  color:#00ff00;
+  margin-top:90px;
+  left:50%;
+  margin-left:350px;
+  width:250px;
+}
+#header2{
+  color:red;
+  margin-top:-48px;
+  margin-left:580px;
+  width:250px;
+}
+
+form input[type="submit"] {
+
+  background-color:#0066ff;
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  height: 30px;
+  width:100px;
+  /*text-transform: uppercase;
+  width: 300px;
+  -webkit-appearance:none;*/
+
+}
+
+form input[type="password"],input[type="email"]{
+  border-width:thin;
+  border-color:#E6E6E6;
+  width: 263px;
+  line-height: 2.2;
+}
+::-webkit-input-placeholder {
+  color:#D8D8D8;
+}
+::-moz-placeholder {
+  color:#D8D8D8;
+}
+input,label,div {
+  display:block;
+}
+label{
+  text-align:left;
+}
