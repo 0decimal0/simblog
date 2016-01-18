@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+from app.views import view_post,view_category
 urlpatterns = [
             url(r'^app/', include('app.urls')),
-                url(r'^admin/', admin.site.urls),
+               # url(r'^admin/', admin.site.urls),
+                #url(r'^$', include),
+                url(
+                        r'^blog/view/(?P<slug>[^\.]+).html', 
+                            'simblog.app.views.view_post', 
+                                name='view_blog_post'),
+                url(
+                        r'^blog/category/(?P<slug>[^\.]+).html', 
+                            'simblog.app.views.view_category', 
+                                name='view_blog_category'),
                 ]
 
